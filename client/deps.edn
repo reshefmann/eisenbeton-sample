@@ -1,0 +1,13 @@
+{;:paths ["src/*"]
+
+ :deps {org.clojure/clojure {:mvn/version "1.10.1"}
+        eisenbeton-client-clj/eisenbeton-client-clj {:mvn/version "0.1.0"}}
+ 
+ :aliases {:dev       {:extra-paths []
+                       :jvm-opts    []
+                       :main-opts  ["-m" "nrepl.cmdline" "-b" "0.0.0.0" "-p" "31000" "--middleware" "[cider.nrepl/cider-middleware]"
+] 
+                       :extra-deps  {nrepl/nrepl {:mvn/version "0.8.3"} 
+                                     cider/cider-nrepl {:mvn/version "0.25.4"}}}}
+
+ }
