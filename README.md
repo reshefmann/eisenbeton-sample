@@ -12,7 +12,7 @@ The docker compose setup contains 3 containers - The server, a nats broker and a
 ```
 docker-compose up -d 
 ```
-
+Then open the browser @ http://localhost:8500/test
 
 ## Sample code
 Take a look a the sample client implementation [here](client/src/eisenbeton_sample/core.clj)
